@@ -1,0 +1,23 @@
+[project]
+name = "uv-sysprog-demo"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "PRKTI", email = "walparc3@mail.ru" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "psutil>=7.2.2",
+    "pydantic>=2.14.4",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "rich>=15.0.0",
+]
+
+[project.scripts]
+uv-sysprog-demo = "uv_sysprog_demo:main"
+
+[build-system]
+requires = ["uv_build>=0.13.9,<0.14.0"]
+build-backend = "uv_build"
